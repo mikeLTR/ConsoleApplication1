@@ -23,7 +23,7 @@ int main()
 	// delete cube4_pointer;
 
 	Cube* newObject_pointer = new Cube (16);
-	cout << newObject_pointer->cicleLength(10) << endl;
+	cout << newObject_pointer->cicleLength(100) << endl;
 	return 0;
 }
 
