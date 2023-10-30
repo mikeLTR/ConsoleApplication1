@@ -20,7 +20,7 @@ int main()
 
 	cout << cube4_pointer->perimeter(5);
 
-	delete cube4_pointer;
+	// delete cube4_pointer;
 
 	Cube* newObject_pointer = new Cube (16);
 	cout << newObject_pointer->cicleLength(10) << endl;
