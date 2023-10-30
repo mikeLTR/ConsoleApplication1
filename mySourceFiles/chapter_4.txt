@@ -1,0 +1,128 @@
+// Activity 4.1.4
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	const double RATE = 5;
+	const double INITIAL_BALANCE = 10000;
+	const double TARGET = 2 * INITIAL_BALANCE;
+
+	cout << "Annual contribution: " << endl;
+	double contribution;
+	cin >> contribution;
+
+	double balance = INITIAL_BALANCE;
+	int year = 0;
+
+	balance = INITIAL_BALANCE + (INITIAL_BALANCE * RATE / 100) + contribution; //first year
+
+	while (balance < TARGET && year > 12)
+	{
+		
+		balance = balance + (balance + contribution) * RATE / 100;
+		year ++;
+	}
+
+	cout << "Year: " << year + 1 << endl;
+	cout << "Balance: " << balance << endl;
+
+	return 0;
+}
+*/
+
+// zyDE 4.4.1: invtable.cpp.
+/*
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	const double RATE = 5;
+	const double INITIAL_BALANCE = 10000;
+	double balance = INITIAL_BALANCE;
+	int nyears;
+	cout << "Enter number of years: ";
+	cin >> nyears;
+
+	cout << fixed << setprecision(2);
+	for (int year = 1; year <= nyears; year++)
+	{
+		balance = balance * (1 + RATE / 100);
+		cout << setw(10) << year << setw(10) << balance << endl;
+	}
+
+	return 0;
+}
+*/
+
+//Activity 4.4.5
+/*
+#include	<iomanip>
+#include	<iostream>
+#include	<string>
+
+using namespace std;
+int main()
+{
+	int counterS;
+	for (counterS = 10; counterS >= 0; counterS --)
+	{
+		cout << counterS << "...";
+	}
+	cout << "lift off!";
+}
+*/
+
+// Activity 4.5.1.
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+
+	do
+	{
+
+		cout << "Enter two positive integers, the first smaller than the second." << endl;
+		cout << "First: " << endl;
+		cin >> a;
+		cout << "Second: " << endl;
+		cin >> b;
+	}
+	while (a > b);
+
+	cout << "You entered " << a << " and " << b << endl;
+
+	return 0;
+}
+*/
+
+// Activity
+/*
+#include<iomanip>
+#include <iostream>
+#include<string>
+
+using namespace std;
+int main()
+{
+	cout << "Please enter the word starting with f" << endl;
+	string wordX;
+	do
+	{
+		cin >> wordX;
+	}
+
+	while (wordX.substr(0, 1) != "f");
+
+	cout << "This word is: " << wordX;
+		return 0;
+}
+*/

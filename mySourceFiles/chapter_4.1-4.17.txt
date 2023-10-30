@@ -1,0 +1,400 @@
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    double sum = 0;
+    int count = 0;
+    double value = 0;
+    cout << "Enter values, Q to quit: ";
+    bool done = false;
+    while (!done)
+    {
+        cin >> value;
+        if (cin.fail())
+        {
+            done = true;
+        }
+        else
+        {
+            sum = sum + value;
+            count++;
+        }
+    }
+    if (count > 0)
+    {
+        double average = sum / count;
+        cout << "Average: " << average << endl;
+    }
+    else
+    {
+        cout << "No data" << endl;
+    }
+    return 0;
+}
+*/
+
+// Activity 4.6.3
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int sum = 0;
+    int input;
+    cout << "Enter values, 0 to quit: " << endl;
+
+    bool done = false;
+    while (!done)
+    {
+        cin >> input;
+        if (cin.fail())
+        {
+            done = true;
+        }
+        else
+        {
+            sum = sum + input;
+        }
+        
+    }
+ 
+
+    cout << "Sum: " << sum << endl;
+
+    return 0;
+}
+*/
+
+/*
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+int main()
+{
+    cout << "Enter numbers: ";
+    int value;
+    while (cin >> value)
+    {
+        
+        
+    }
+    cin.clear();
+    string sentenel;
+    cin >> sentenel;
+    cout << sentenel;
+
+    return 0;
+}
+*/
+
+//Avtivity 4.10.5
+/*
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    bool done = false;
+    string unit1 = "";
+    string unit2 = "";
+    double factor1 = 0; // conversion factor from first unit to cm
+    double factor2 = 0; // conversion factor from cm to second unit
+
+    while (!done)
+    {
+        bool again = false; // true to repeat the same conversion
+        cout << "From unit (in, cm, m, again, quit): " << endl;
+        string command;
+        cin >> command;
+        if (command == "in")
+        {
+            factor1 = 2.54;
+            unit1 = command;
+        }
+        else if (command == "cm")
+        {
+       
+            factor1 = 1;
+            unit1 = command;
+        }
+        else if (command == "m")
+        {
+       
+            factor1 = 1000;
+            unit1 = command;
+        }
+        else if (command == "again")
+        {
+            again = true;
+        }
+        else if (command == "quit")
+        {
+            done = true;
+        }
+        else
+        {
+            cout << "Sorry, unknown unit." << endl;
+        }
+
+        if (factor1 != 0 && !again && !done)
+        {
+            cout << "To unit: " << endl;
+            cin >> unit2;
+            if (unit2 == "in")
+            {
+                factor2 = 1.0 / 2.54;
+            }
+            else if (unit2 == "m")
+            {
+        
+                factor2 = 1.0 / 1000;
+            }
+            else if (unit2 == "cm")
+            {
+                factor2 = 1.0 / 1.0;
+            }
+            else
+            {
+                cout << "Sorry, unknown unit." << endl;
+            }
+        }
+
+        
+    }
+
+    return 0;
+}
+*/
+
+/*
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   string word;
+   cin >> word;
+
+   int count = 0;
+   int vowels=0;
+
+   for (int i = 0; i <= word.length(); i++)
+   {
+      string ch = word.substr(i, 1);
+      if (ch == "a" || ch == "e" || ch == "i" || ch == "o" || ch == "u")
+      {
+          count++;
+      }
+   }
+
+   cout << "Vowels: " << count << endl;
+
+   return 0;
+}
+*/
+
+// 4.11 Dublication founds
+/*
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string previous;
+    string current;
+    cin >> previous;
+    while (cin >> current)
+    {
+        if (current == previous)
+        { 
+            cout << "duplication" << endl; 
+        }    
+        else
+         {
+        cout << "No duplication" << endl;
+        }
+    }
+    return 0;
+}
+*/
+//Activity 4.11.1
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string word;
+    cin >> word;
+
+    bool done = false;
+    while (!done)
+    {
+        string previous = word;
+        cin >> word;
+             if (word.substr(word.length() - 1) == ".")
+        {
+            word = previous;
+            done = true;
+        }
+        if (word == previous)
+        {
+            cout << previous << " " << endl;
+        }
+
+    }
+    cout << word << ".";
+
+    return 0;
+}
+*/
+
+//Activity 4.13.1 Credit card hyphen on space
+/*
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+int main()
+{
+    // string creditCardStringWhole = "0 1-2 3-4 5 6-7 8 9";
+    string creditCardStringResult;
+    string creditCardStringWhole;
+    string charSingle;
+    cin >> creditCardStringWhole;
+    int i = 0;
+
+    creditCardStringResult = creditCardStringWhole;
+
+        while (i < creditCardStringResult.length())
+    {
+            if (creditCardStringResult.substr(i, 1) == " " || creditCardStringResult.substr(i, 1) == "-")
+        {
+            string creditCardStringBefore = creditCardStringResult.substr(0, i);
+            string creditCardStringAfter = creditCardStringResult.substr(i + 1);
+            creditCardStringResult = creditCardStringBefore + creditCardStringAfter;
+
+        }
+            else
+            {
+                i++;
+            }
+    }
+    cout << creditCardStringResult;
+    return 0;
+}
+*/
+
+// zyDE 4.14.1: powtable.cpp.
+/*
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    const int NMAX = 4;
+    const double XMAX = 10;
+
+    // Print table header
+
+    for (int n = 1; n <= NMAX; n++)
+    {
+        cout << setw(10) << n;
+    }
+    cout << endl;
+    for (int n = 1; n <= NMAX; n++)
+    {
+        cout << setw(10) << "x ";
+    }
+    cout << endl << endl;
+
+    // Print table body
+
+    for (double x = 1; x <= XMAX; x++)
+    {
+        // Print table row
+
+        for (int n = 1; n <= NMAX; n++)
+        {
+            cout << setw(10) << pow(x, n);
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+*/
+
+
+// PARTICIPATION ACTIVITY 4.14.5: Complete this program that reads an integer n and prints a diamond pattern.
+/*
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    // Draw top triangle
+    for (int left_stars = 0; left_stars < n; left_stars++)
+    {
+        for (int column = 0; column < 2 * n - 1; column++)
+        {
+            int first_star = n - 1 - left_stars;
+            int last_star = n - 1 + left_stars;
+            if (column < first_star || column > last_star)
+            {
+                cout << "-";
+            }
+            else
+            {
+
+                cout << "*";
+            }
+        }
+        cout << endl;
+    }
+
+    // Draw bottom triangle
+ 
+    return 0;
+}
+*/
+
+//4.17.1
+
+/*
+#include <iomanip>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    // srand(time(0));
+    int r;
+    for (int i = 1; i <= 10; i++)
+    {
+        r = /* 1 + */ rand();
+        cout << r << endl;
+    }
+    
+    return 0;
+} */
