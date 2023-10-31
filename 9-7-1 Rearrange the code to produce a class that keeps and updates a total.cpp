@@ -34,7 +34,7 @@ int main()
 	while (cin >> miles)
 	{
 		car.drive(miles);
-		cout << "odometer after" << miles << "miles: ";
+		cout << "odometer afterrr" << miles << "miles: ";
 		cout << car.get_odometer() << endl;
 	}
 	return 0;
