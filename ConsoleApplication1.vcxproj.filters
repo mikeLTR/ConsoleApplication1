@@ -15,16 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zmain.cpp">
+    <ClCompile Include="9-7-1 Rearrange the code to produce a class that keeps and updates a total.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="zsource.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="zheader.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
