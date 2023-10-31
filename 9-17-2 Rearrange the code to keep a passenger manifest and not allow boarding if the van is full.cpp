@@ -6,25 +6,32 @@ using namespace std;
 class Van
 {
 public:
+	Van(int max_passengers);
 	void drive();
 	void board(string name);
 	void display() const;
 
 private:
+	int count;
 	vector <string> passengers;
 };
+
+Van::Van(int max_passengers)
+{
+	passengers = vector<string> (max_passengers);
+	count = 0;
+}
 void Van::drive()
 {
-
+	count = 0;
 }
 
 void Van::board(string name)
 {
-	int count;
-	count++;
 	if (count < passengers.size())
 	{
 		passengers[count] = name;
+		count++;
 	}
 }
 
