@@ -27,7 +27,7 @@ Car::Car()
 int main()
 {
 	Car car;
-	cout << "Odometer before trip: ";
+	cout << "Odometer before trippp: ";
 	cout << car.get_odometer() << endl;
 
 	double miles;
