@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="9-17-2 Rearrange the code to keep a passenger manifest and not allow boarding if the van is full.cpp" />
+    <ClCompile Include="10-2-4 Fix the bug.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
