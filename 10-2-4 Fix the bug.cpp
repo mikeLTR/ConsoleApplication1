@@ -29,7 +29,7 @@ private:
 
 void CheckingAccount::month_end()
 {
-	if (get_balance() < 100)
+	if (get_balance() < 900)
 	{
 		withdraw(10);
 	}
