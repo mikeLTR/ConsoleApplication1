@@ -13,7 +13,7 @@ private:
 	double balance;
 };
 
-BankAccount::BankAccount() { balance = 0 };
+BankAccount::BankAccount() { balance = 0; }
 void BankAccount::deposit(double amount) { balance = balance + amount; }
 void BankAccount::withdraw(double amount) { balance = balance - amount; }
 double BankAccount::get_balance() const { return balance; }
