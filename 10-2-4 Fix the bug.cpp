@@ -31,7 +31,7 @@ void CheckingAccount::month_end()
 {
 	if (get_balance() < 100)
 	{
-		balance = balance - 10;
+		withdraw(10);
 	}
 }
 
