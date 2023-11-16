@@ -15,7 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10-2-4 Fix the bug.cpp">
+    <ClInclude Include="10-4-1 Implement a derived class\critter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="10-4-1 Implement a derived class\critter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="10-4-1 Implement a derived class\fastcritterTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
