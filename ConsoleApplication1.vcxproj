@@ -19,11 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="10-4-1 Implement a derived class\critter.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="10-4-1 Implement a derived class\critter.cpp" />
-    <ClCompile Include="10-4-1 Implement a derived class\fastcritterTester.cpp" />
+    <ClCompile Include="10-8-1 Workers.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
