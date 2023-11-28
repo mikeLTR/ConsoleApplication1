@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10-8-1 Workers.cpp">
+    <ClCompile Include="OOFileIO\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
