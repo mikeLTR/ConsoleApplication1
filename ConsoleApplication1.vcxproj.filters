@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OOFileIO\main.cpp">
+    <ClCompile Include="10-13 Progr Project Time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
